@@ -1,0 +1,53 @@
+﻿@model MyEvernote.Entities.ComplexTypes.RegisterViewModel
+@{
+    ViewBag.Title = "Login";
+}
+<script src="~/Scripts/ValidationClass.js"></script>
+<link href="~/Content/login-register.css" rel="stylesheet" />
+<section class="login-info">
+    <div class="container">
+        <div class="row main">
+            <div class="form-header">
+                <h1 class="text-center ">Register Form </h1>
+            </div>
+            @using (Html.BeginForm())
+            {
+                <div class="main-content">
+                    
+                    @Html.ValidationSummary(false)
+
+                    <div class="input-group ">
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></span>
+                        @Html.TextBoxFor(x => x.Username, new { placeholder = "Kullanıcı Adınız", @class = "form-control" })
+
+                    </div>
+                    <div class="input-group ">
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></span>
+                        @Html.TextBoxFor(x => x.EMail, new { placeholder = "E-Mail Adresiniz", @class = "form-control" })
+
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></span>
+                        @Html.PasswordFor(x => x.Password, new { placeholder = "Şifreniz", @class = "form-control" })
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></span>
+                        @Html.PasswordFor(x => x.RePassword, new { placeholder = "Şifreniz Tekrar", @class = "form-control" })
+                    </div>
+
+                    <div class="form-group ">
+                        <button type="submit" class="btn btn-danger btn-lg btn-block login-button">Kayıt Ol</button>
+                    </div>
+
+
+                </div>
+            }
+
+        </div>
+    </div>
+</section>
+<script>
+    $(function() {
+        $("footer").parent().hide();
+    });
+</script>

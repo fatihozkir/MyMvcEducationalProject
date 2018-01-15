@@ -1,0 +1,51 @@
+﻿
+@model MyEvernote.Entities.ComplexTypes.LoginViewModel
+@{
+    ViewBag.Title = "Login";
+    
+}
+<link href="~/Content/login-register.css" rel="stylesheet" />
+<script src="~/Scripts/ValidationClass.js"></script>
+  
+
+<section class="login-info">
+    <div class="container">
+        <div class="row main">
+            <div class="form-header">
+                <h1 class="text-center ">login form </h1>
+            </div>
+            @using (Html.BeginForm())
+            {
+                <div class="main-content">
+                    @Html.ValidationSummary(false)
+                    @if (ViewBag.SetLink != null)
+                    {
+                        <a class="btn btn-info" href="@ViewBag.SetLink">Kullanıcı Aktifleştir !</a>
+                    }
+                    <div class="input-group ">
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></span>
+                        @Html.TextBoxFor(x=>x.Username,new { placeholder = "Enter your username",@class="form-control" })
+                        
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></span>
+                        @Html.PasswordFor(x=>x.Password,new { placeholder = "Şifreniz",@class="form-control" })
+                    </div>
+          
+                    <div class="form-group ">
+                        <button type="submit" class="btn btn-danger btn-lg btn-block login-button">Giriş</button>
+                    </div>
+          
+
+      
+                </div>
+            }
+            
+        </div>
+    </div>
+</section>
+<script>
+    $(function() {
+        $("footer").parent().hide();
+    });
+</script>

@@ -1,0 +1,20 @@
+﻿@{
+    CategoryManager categoryManager=new CategoryManager();
+    List<Category> list = categoryManager.GetAllCategories();
+}
+<p class="lead">Kategoriler</p>
+<div class="list-group">
+    <a href="@Url.Action("Index","Home")" title="Tümü" class="list-group-item">
+        <span class="glyphicon glyphicon-arrow-right"></span>
+        Tümü
+    </a>
+    @foreach (var item in list)
+    {
+        
+        <a href="/Category/Select/@item.Id" title="@item.Description" class="list-group-item">
+            <span class="glyphicon glyphicon-arrow-right"></span>
+            @item.Title
+        </a>
+    }
+
+</div>

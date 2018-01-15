@@ -1,0 +1,46 @@
+﻿@model MyEvernote.MvcWebUI.ViewModels.ErrorViewModel
+@{
+    ViewBag.Title = "İşlem Başarılı";
+}
+<link href="~/Content/login-register.css" rel="stylesheet" />
+<section class="login-info">
+    <div class="container">
+        <div class="row main">
+            <div class="form-header">
+                <h1 class="text-center ">@Model.Header</h1>
+            </div>
+            <div class="main-content">
+                <div class="text-danger">
+                    <h2>
+                        <span class="glyphicon glyphicon-remove-sign"></span>
+                        &nbsp;@Model.Title
+                    </h2>
+                    <hr />
+                    <p class="text-justify">
+                        <ul class="list-group">
+                            @foreach (var msg in Model.Items)
+                            {
+                                <li class="list-group-item">@msg.Message</li>
+                            }
+                        </ul>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@{
+    string js = string.Empty;
+    if (Model.IsRedirecting)
+    {
+        js = "setTimeout(function() {window.location = '" + Model.RedirectingUrl + "'}," + Model.RedirectingTimeout + ");";
+    }
+}
+<script>
+
+    $(function () {
+        $("footer").parent().hide();
+        @Html.Raw(js);
+    });
+</script>

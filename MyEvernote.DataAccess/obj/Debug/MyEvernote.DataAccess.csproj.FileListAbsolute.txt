@@ -1,0 +1,17 @@
+C:\Users\FatihOzkir\Source\repos\MyMvcLearning\MyEvernoteSolution\MyEvernote.DataAccess\bin\Debug\MyEvernote.DataAccess.dll.config
+C:\Users\FatihOzkir\Source\repos\MyMvcLearning\MyEvernoteSolution\MyEvernote.DataAccess\bin\Debug\MyEvernote.DataAccess.dll
+C:\Users\FatihOzkir\Source\repos\MyMvcLearning\MyEvernoteSolution\MyEvernote.DataAccess\bin\Debug\MyEvernote.DataAccess.pdb
+C:\Users\FatihOzkir\Source\repos\MyMvcLearning\MyEvernoteSolution\MyEvernote.DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\FatihOzkir\Source\repos\MyMvcLearning\MyEvernoteSolution\MyEvernote.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\FatihOzkir\Source\repos\MyMvcLearning\MyEvernoteSolution\MyEvernote.DataAccess\bin\Debug\FakeData.dll
+C:\Users\FatihOzkir\Source\repos\MyMvcLearning\MyEvernoteSolution\MyEvernote.DataAccess\bin\Debug\MyEvernote.Entities.dll
+C:\Users\FatihOzkir\Source\repos\MyMvcLearning\MyEvernoteSolution\MyEvernote.DataAccess\bin\Debug\MyEvernote.Entities.pdb
+C:\Users\FatihOzkir\Source\repos\MyMvcLearning\MyEvernoteSolution\MyEvernote.DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\FatihOzkir\Source\repos\MyMvcLearning\MyEvernoteSolution\MyEvernote.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\FatihOzkir\Source\repos\MyMvcLearning\MyEvernoteSolution\MyEvernote.DataAccess\bin\Debug\FakeData.pdb
+C:\Users\FatihOzkir\Source\repos\MyMvcLearning\MyEvernoteSolution\MyEvernote.DataAccess\obj\Debug\MyEvernote.DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\FatihOzkir\Source\repos\MyMvcLearning\MyEvernoteSolution\MyEvernote.DataAccess\obj\Debug\MyEvernote.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\FatihOzkir\Source\repos\MyMvcLearning\MyEvernoteSolution\MyEvernote.DataAccess\obj\Debug\MyEvernote.DataAccess.dll
+C:\Users\FatihOzkir\Source\repos\MyMvcLearning\MyEvernoteSolution\MyEvernote.DataAccess\obj\Debug\MyEvernote.DataAccess.pdb
+C:\Users\FatihOzkir\Source\repos\MyMvcLearning\MyEvernoteSolution\MyEvernote.DataAccess\bin\Debug\MyEvernote.Common.dll
+C:\Users\FatihOzkir\Source\repos\MyMvcLearning\MyEvernoteSolution\MyEvernote.DataAccess\bin\Debug\MyEvernote.Common.pdb
